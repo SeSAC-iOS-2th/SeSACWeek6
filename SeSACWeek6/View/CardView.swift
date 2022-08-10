@@ -42,6 +42,9 @@ class CardView: UIView {
         view.backgroundColor = .lightGray
         self.addSubview(view)
         
+        //카드뷰를 인터페이습 빌더 기반으로 만들고, 레이아웃도 설정했는데 false가 아닌 true로 나온다
+        //true. 오토레이아웃 적용이 되는 관점보다 오토리사이징이 내부적으로 constraints처리가 됨
+        print(view.translatesAutoresizingMaskIntoConstraints)
     }
     
 }
