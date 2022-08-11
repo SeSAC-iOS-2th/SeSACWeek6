@@ -75,6 +75,7 @@ class MainViewController: UIViewController {
 }
 
 //하나의 프로토콜, 메서드에서 여러 컬렉션뷰의 delegate, datasource 구현해야 함
+//UICollectionViewDelegateFlowLayout - sizeForItemAt - 역동적인 셀
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         

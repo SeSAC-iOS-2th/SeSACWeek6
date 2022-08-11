@@ -31,6 +31,7 @@
 		12431E3228A0950F007AB31D /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12431E3128A0950F007AB31D /* URL+Extension.swift */; };
 		12431E3428A0A781007AB31D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12431E3328A0A781007AB31D /* APIManager.swift */; };
 		12431E3628A0ABFA007AB31D /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12431E3528A0ABFA007AB31D /* ClosureViewController.swift */; };
+		12C4C3BC28A493900009B261 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4C3BB28A493900009B261 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		12431E3128A0950F007AB31D /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		12431E3328A0A781007AB31D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		12431E3528A0ABFA007AB31D /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
+		12C4C3BB28A493900009B261 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				12431E0F28A0900A007AB31D /* SceneDelegate.swift */,
 				12431E1128A0900A007AB31D /* ViewController.swift */,
 				12431E1328A0900A007AB31D /* Main.storyboard */,
+				12C4C3BB28A493900009B261 /* MapViewController.swift */,
 				1228689828A1F63700A95CDA /* MainViewController.swift */,
 				1228689A28A1FC2900A95CDA /* MainTableViewCell.swift */,
 				12431E3528A0ABFA007AB31D /* ClosureViewController.swift */,
@@ -241,6 +244,7 @@
 				12431E3228A0950F007AB31D /* URL+Extension.swift in Sources */,
 				1200718A28A343EF00DDEBDC /* TMDBAPIManager.swift in Sources */,
 				12431E3428A0A781007AB31D /* APIManager.swift in Sources */,
+				12C4C3BC28A493900009B261 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +408,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,7 +436,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
