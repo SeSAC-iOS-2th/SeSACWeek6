@@ -16,6 +16,7 @@
 		1228689728A1F37500A95CDA /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1228689528A1F37500A95CDA /* CardCollectionViewCell.xib */; };
 		1228689928A1F63700A95CDA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228689828A1F63700A95CDA /* MainViewController.swift */; };
 		1228689B28A1FC2900A95CDA /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228689A28A1FC2900A95CDA /* MainTableViewCell.swift */; };
+		12343D5D28A90AA9006D923F /* NearbyMovieTheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12343D5C28A90AA9006D923F /* NearbyMovieTheaterViewController.swift */; };
 		12431E0E28A0900A007AB31D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12431E0D28A0900A007AB31D /* AppDelegate.swift */; };
 		12431E1028A0900A007AB31D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12431E0F28A0900A007AB31D /* SceneDelegate.swift */; };
 		12431E1228A0900A007AB31D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12431E1128A0900A007AB31D /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		1228689528A1F37500A95CDA /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		1228689828A1F63700A95CDA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1228689A28A1FC2900A95CDA /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		12343D5C28A90AA9006D923F /* NearbyMovieTheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyMovieTheaterViewController.swift; sourceTree = "<group>"; };
 		12431E0A28A0900A007AB31D /* SeSACWeek6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACWeek6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12431E0D28A0900A007AB31D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12431E0F28A0900A007AB31D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				12431E0F28A0900A007AB31D /* SceneDelegate.swift */,
 				12431E1128A0900A007AB31D /* ViewController.swift */,
 				12431E1328A0900A007AB31D /* Main.storyboard */,
+				12343D5C28A90AA9006D923F /* NearbyMovieTheaterViewController.swift */,
 				1295434228A5DD1700C91562 /* CameraViewController.swift */,
 				12C4C3BB28A493900009B261 /* MapViewController.swift */,
 				1228689828A1F63700A95CDA /* MainViewController.swift */,
@@ -242,6 +245,7 @@
 				1295434328A5DD1700C91562 /* CameraViewController.swift in Sources */,
 				12431E3628A0ABFA007AB31D /* ClosureViewController.swift in Sources */,
 				1228689928A1F63700A95CDA /* MainViewController.swift in Sources */,
+				12343D5D28A90AA9006D923F /* NearbyMovieTheaterViewController.swift in Sources */,
 				1228689628A1F37500A95CDA /* CardCollectionViewCell.swift in Sources */,
 				12431E2D28A09111007AB31D /* APIKey.swift in Sources */,
 				1228689328A1E62B00A95CDA /* CardView.swift in Sources */,
