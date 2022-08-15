@@ -35,6 +35,7 @@
 		1295434128A5D7A200C91562 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 1295434028A5D7A200C91562 /* YPImagePicker */; };
 		1295434328A5DD1700C91562 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295434228A5DD1700C91562 /* CameraViewController.swift */; };
 		12C4C3BC28A493900009B261 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4C3BB28A493900009B261 /* MapViewController.swift */; };
+		12FD10A028AA61C900781E4E /* MovieTheaterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD109F28AA61C900781E4E /* MovieTheaterInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		12431E3528A0ABFA007AB31D /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		1295434228A5DD1700C91562 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		12C4C3BB28A493900009B261 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		12FD109F28AA61C900781E4E /* MovieTheaterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTheaterInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				12431E0F28A0900A007AB31D /* SceneDelegate.swift */,
 				12431E1128A0900A007AB31D /* ViewController.swift */,
 				12431E1328A0900A007AB31D /* Main.storyboard */,
+				12FD109F28AA61C900781E4E /* MovieTheaterInfo.swift */,
 				12343D5C28A90AA9006D923F /* NearbyMovieTheaterViewController.swift */,
 				1295434228A5DD1700C91562 /* CameraViewController.swift */,
 				12C4C3BB28A493900009B261 /* MapViewController.swift */,
@@ -244,6 +247,7 @@
 				12431E0E28A0900A007AB31D /* AppDelegate.swift in Sources */,
 				1295434328A5DD1700C91562 /* CameraViewController.swift in Sources */,
 				12431E3628A0ABFA007AB31D /* ClosureViewController.swift in Sources */,
+				12FD10A028AA61C900781E4E /* MovieTheaterInfo.swift in Sources */,
 				1228689928A1F63700A95CDA /* MainViewController.swift in Sources */,
 				12343D5D28A90AA9006D923F /* NearbyMovieTheaterViewController.swift in Sources */,
 				1228689628A1F37500A95CDA /* CardCollectionViewCell.swift in Sources */,

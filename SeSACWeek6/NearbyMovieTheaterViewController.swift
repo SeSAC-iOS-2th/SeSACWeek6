@@ -12,9 +12,6 @@ class NearbyMovieTheaterViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    let CGVInfo: [String: [Double]] = ["CGV 영등포": [37.517135, 126.903685], "CGV여의도": [37.525078, 126.925905], "CGV 구로": [37.501136, 126.882770], "CGV 목동": [37.526522, 126.875187]]
-    let lotteInfo: [String: [Double]] = ["롯데시네마 영등포": [37.516190, 126.908323], "롯데시네마 용산": [37.532800, 126.959707], "롯데시네마 홍대": [37.557297, 126.925099], "롯데시네마 신림": [37.483778, 126.930211]]
-    let megaInfo: [String : [Double]] = ["메가박스 홍대": [37.555991, 126.922044], "메가박스 신촌": [37.559769, 126.941903], "메가박스 목동": [37.529050, 126.876048], "메가박스 화곡": [37.540604, 126.837607]]
     
     let locationManager = CLLocationManager()
     
@@ -48,31 +45,31 @@ class NearbyMovieTheaterViewController: UIViewController {
         let region = MKCoordinateRegion(center: center, latitudinalMeters: 10000, longitudinalMeters: 10000)
         mapView.setRegion(region, animated: true)
                 
-        for info in CGVInfo {
-            let annotation = setAnnotation(title: info.key, latitude: info.value[0], longitude: info.value[1])
+        MovieTheaterInfo.CGVInfo.forEach({ (key, value) in
+            let annotation = setAnnotation(title: key, latitude: value[0], longitude: value[1])
             mapView.addAnnotation(annotation)
-        }
-        for info in lotteInfo {
-            let annotation = setAnnotation(title: info.key, latitude: info.value[0], longitude: info.value[1])
+        })
+        MovieTheaterInfo.lotteInfo.forEach({ (key, value) in
+            let annotation = setAnnotation(title: key, latitude: value[0], longitude: value[1])
             mapView.addAnnotation(annotation)
-        }
-        for info in megaInfo {
-            let annotation = setAnnotation(title: info.key, latitude: info.value[0], longitude: info.value[1])
+        })
+        MovieTheaterInfo.megaInfo.forEach({ (key, value) in
+            let annotation = setAnnotation(title: key, latitude: value[0], longitude: value[1])
             mapView.addAnnotation(annotation)
-        }
+        })
     }
 
     @IBAction func FilterButtonClicked(_ sender: UIBarButtonItem) {
         
         let alert = UIAlertController()
         
-        let megaBox = UIAlertAction(title: "메가박스", style: .default, handler: {action in self.megaBoxButtonClicked()
+        let megaBox = UIAlertAction(title: "메가박스", style: .default, handler: {_ in self.movieTheaterButtonClicked("megaBox")
         })
-        let lotteCinema = UIAlertAction(title: "롯데시네마", style: .default, handler: {action in self.lotteCinemaButtonClicked()
+        let lotteCinema = UIAlertAction(title: "롯데시네마", style: .default, handler: {_ in self.movieTheaterButtonClicked("lotteCinema")
         })
-        let CGV = UIAlertAction(title: "CGV", style: .default, handler: {action in self.CGVButtonClicked()
+        let CGV = UIAlertAction(title: "CGV", style: .default, handler: {_ in self.movieTheaterButtonClicked("CGV")
         })
-        let all = UIAlertAction(title: "전체보기", style: .default, handler: {action in self.allButtonClicked()
+        let all = UIAlertAction(title: "전체보기", style: .default, handler: {_ in self.movieTheaterButtonClicked("all")
         })
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
         
@@ -85,32 +82,32 @@ class NearbyMovieTheaterViewController: UIViewController {
         present(alert, animated: true)
         
     }
-    
-    func CGVButtonClicked() {
+
+    func movieTheaterButtonClicked(_ movieTheater: String) {
+        
         self.mapView.removeAnnotations(self.mapView.annotations)
-        for info in CGVInfo {
-            let annotation = setAnnotation(title: info.key, latitude: info.value[0], longitude: info.value[1])
-            mapView.addAnnotation(annotation)
+
+        switch movieTheater {
+        case "CGV":
+            MovieTheaterInfo.CGVInfo.forEach({ (key, value) in
+                let annotation = setAnnotation(title: key, latitude: value[0], longitude: value[1])
+                mapView.addAnnotation(annotation)
+            })
+        case "lotteCinema":
+            MovieTheaterInfo.lotteInfo.forEach({ (key, value) in
+                let annotation = setAnnotation(title: key, latitude: value[0], longitude: value[1])
+                mapView.addAnnotation(annotation)
+            })
+        case "megaBox":
+            MovieTheaterInfo.megaInfo.forEach({ (key, value) in
+                let annotation = setAnnotation(title: key, latitude: value[0], longitude: value[1])
+                mapView.addAnnotation(annotation)
+            })
+        case "all":
+            let center = CLLocationCoordinate2D(latitude: 37.51190, longitude: 126.90345)
+            setRegionAndMovieAnnotation(center: center)
+        default: print("default")
         }
-    }
-    func lotteCinemaButtonClicked() {
-        self.mapView.removeAnnotations(self.mapView.annotations)
-        for info in lotteInfo {
-            let annotation = setAnnotation(title: info.key, latitude: info.value[0], longitude: info.value[1])
-            mapView.addAnnotation(annotation)
-        }
-    }
-    func megaBoxButtonClicked() {
-        self.mapView.removeAnnotations(self.mapView.annotations)
-        for info in megaInfo {
-            let annotation = setAnnotation(title: info.key, latitude: info.value[0], longitude: info.value[1])
-            mapView.addAnnotation(annotation)
-        }
-    }
-    func allButtonClicked() {
-        self.mapView.removeAnnotations(self.mapView.annotations)
-        let center = CLLocationCoordinate2D(latitude: 37.51190, longitude: 126.90345)
-        setRegionAndMovieAnnotation(center: center)
     }
 }
 
