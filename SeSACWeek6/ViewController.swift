@@ -26,8 +26,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var blogList: [String] = []
-    var cafeList: [String] = []
+    private var blogList: [String] = []
+    private var cafeList: [String] = []
     
     var isExpanded = false // numberOfLines false면 2, true면 0으로!
     
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension //모든 섹션의 셀에 대해서 유동적!
     }
 
-    func searchBlog() {
+    private func searchBlog() {
         KakaoAPIManager.shared.callRequest(type: .blog, query: "고래밥") { json in
                         
             for item in json["documents"].arrayValue {

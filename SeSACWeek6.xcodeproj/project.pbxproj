@@ -35,6 +35,9 @@
 		1295434128A5D7A200C91562 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 1295434028A5D7A200C91562 /* YPImagePicker */; };
 		1295434328A5DD1700C91562 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295434228A5DD1700C91562 /* CameraViewController.swift */; };
 		12C4C3BC28A493900009B261 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4C3BB28A493900009B261 /* MapViewController.swift */; };
+		12E82A4128ABE700007AFD39 /* OpenWeatherMapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E82A4028ABE700007AFD39 /* OpenWeatherMapAPI.swift */; };
+		12F9CEE428ABCD3D0033191B /* OpenWeatherMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9CEE328ABCD3D0033191B /* OpenWeatherMapViewController.swift */; };
+		12F9CEE628ABCD5E0033191B /* OpenWeatherMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F9CEE528ABCD5E0033191B /* OpenWeatherMap.storyboard */; };
 		12FD10A028AA61C900781E4E /* MovieTheaterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD109F28AA61C900781E4E /* MovieTheaterInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,9 @@
 		12431E3528A0ABFA007AB31D /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		1295434228A5DD1700C91562 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		12C4C3BB28A493900009B261 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		12E82A4028ABE700007AFD39 /* OpenWeatherMapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapAPI.swift; sourceTree = "<group>"; };
+		12F9CEE328ABCD3D0033191B /* OpenWeatherMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapViewController.swift; sourceTree = "<group>"; };
+		12F9CEE528ABCD5E0033191B /* OpenWeatherMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OpenWeatherMap.storyboard; sourceTree = "<group>"; };
 		12FD109F28AA61C900781E4E /* MovieTheaterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTheaterInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +129,7 @@
 		12431E0C28A0900A007AB31D /* SeSACWeek6 */ = {
 			isa = PBXGroup;
 			children = (
+				12F9CEE228ABCD2A0033191B /* OpenWeatherMap */,
 				1200718628A3307300DDEBDC /* Protocol */,
 				1228688D28A1DFE600A95CDA /* View */,
 				12431E2E28A09480007AB31D /* Network */,
@@ -154,6 +161,16 @@
 				1200718928A343EF00DDEBDC /* TMDBAPIManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		12F9CEE228ABCD2A0033191B /* OpenWeatherMap */ = {
+			isa = PBXGroup;
+			children = (
+				12F9CEE328ABCD3D0033191B /* OpenWeatherMapViewController.swift */,
+				12F9CEE528ABCD5E0033191B /* OpenWeatherMap.storyboard */,
+				12E82A4028ABE700007AFD39 /* OpenWeatherMapAPI.swift */,
+			);
+			path = OpenWeatherMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +249,7 @@
 				12431E1728A0900B007AB31D /* Assets.xcassets in Resources */,
 				1228689728A1F37500A95CDA /* CardCollectionViewCell.xib in Resources */,
 				12431E1528A0900A007AB31D /* Main.storyboard in Resources */,
+				12F9CEE628ABCD5E0033191B /* OpenWeatherMap.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +271,9 @@
 				1228689628A1F37500A95CDA /* CardCollectionViewCell.swift in Sources */,
 				12431E2D28A09111007AB31D /* APIKey.swift in Sources */,
 				1228689328A1E62B00A95CDA /* CardView.swift in Sources */,
+				12E82A4128ABE700007AFD39 /* OpenWeatherMapAPI.swift in Sources */,
 				12431E1028A0900A007AB31D /* SceneDelegate.swift in Sources */,
+				12F9CEE428ABCD3D0033191B /* OpenWeatherMapViewController.swift in Sources */,
 				1228688F28A1E03000A95CDA /* SeSACButton.swift in Sources */,
 				12431E3028A0949B007AB31D /* Endpoint.swift in Sources */,
 				1200718828A3308300DDEBDC /* ReusableViewProtocol.swift in Sources */,

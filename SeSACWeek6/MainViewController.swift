@@ -144,6 +144,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         print("MainViewController", #function, indexPath)
         
+        
+        
         cell.backgroundColor = .yellow
         cell.contentCollectionView.delegate = self
         cell.contentCollectionView.dataSource = self

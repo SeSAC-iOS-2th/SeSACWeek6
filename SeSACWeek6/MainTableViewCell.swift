@@ -22,7 +22,7 @@ class MainTableViewCell: UITableViewCell {
         
     }
     
-    func setupUI() {
+    private func setupUI() {
         titleLabel.font = .boldSystemFont(ofSize: 24)
         titleLabel.backgroundColor = .clear
         
@@ -30,7 +30,7 @@ class MainTableViewCell: UITableViewCell {
         contentCollectionView.collectionViewLayout = collectionViewLayout()
     }
     
-    func collectionViewLayout() -> UICollectionViewFlowLayout {
+    private func collectionViewLayout() -> UICollectionViewFlowLayout {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 200, height: 180)
